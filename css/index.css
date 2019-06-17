@@ -64,6 +64,7 @@ html, body {
     float: left;
 }
 
+  /* line-height: 1; 行間距，*/
 .delete_btn {
     font-size: 22px;
     background: none;
@@ -74,7 +75,7 @@ html, body {
     line-height: 1;
     display: none;
 }
-
+/* outline: none;外框邊線 ，transform: translateY(2px) 橫向移動，*/
 .delete_btn:focus { outline: none; }
 .delete_btn:active { transform: translateY(2px); }
 
@@ -122,9 +123,8 @@ h2 {
     font-weight: 400;
     margin-bottom: 15px;
 }
-
+/* first-child第一個ITEM，其他的ITEM， 參數even表示索引值為偶數的子元素  */
 .item:first-child { border-top: 1px solid #e7e7e7; }
 .item:nth-child(even) { background-color: #f7f7f7; }
-
-
+/* translateX(-20px);負數往左移動，正數往右移動 */
 .item:hover .item_value { transform: translateX(-20px); }
